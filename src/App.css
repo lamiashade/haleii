@@ -33,7 +33,7 @@
 }
 
 .nav-bar .nav-items {
-  display: flex; 
+  display: flex;
   position: absolute;
   right: 0;
   bottom: 2px;
@@ -50,6 +50,39 @@
   color: var(--primaryColor);
 }
 
+.nav-bar .nav-btn{
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-bar .nav-btn .nav-icon {
+  height: 2rem;
+  width: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .nav-bar .nav-items a {
+    display: none;
+  }
+  .nav-bar .nav-title {
+    margin-left: 10px;
+  }
+
+  .nav-bar .nav-items {
+    position: none;
+    margin-right: 0px;
+  }
+
+  .nav-bar .nav-btn {
+    display: flex;
+    padding: 0px;
+    color: var(--mainWhite);
+  }
+}
 /* End Navigation Bar */
 
 /* Hero */
@@ -95,7 +128,7 @@
 
 .hero-call-to-action h1 {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -110,6 +143,12 @@
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .hero-call-to-action h1 {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;

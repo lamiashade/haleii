@@ -9,11 +9,11 @@ export default function Home() {
         <React.Fragment>
             <Navbar />
             <Hero>
-                <Banner title="Truely Professional. True Value." 
-                    subtitle="We’ll help you find yours." >
+                <Banner title="Buying. Selling. The right way." 
+                    subtitle="helping everyday people uncover value." >
                 </Banner>
                 <div className="hero-call-to-action">
-                    <h1>Discover if you're eligible for free True value appraisal.</h1>
+                    <h1>Find out how much your Homes worth.</h1>
                     <button className="hero-btn">Get Appraised</button>
                 </div>
             </Hero>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { FaAlignRight } from "react-icons/fa";
 
 export default class Navbar extends Component {
 
@@ -8,6 +9,7 @@ export default class Navbar extends Component {
     handleToggle= () =>{
         this.setState({isOpen:!this.state.isOpen})
     }
+
     render() {
 
         return (
@@ -17,6 +19,9 @@ export default class Navbar extends Component {
                     <a>Service</a>
                     <a>Company</a>
                     <a>Support</a>
+                    <button className="nav-btn" onclick={this.handleToggle}>
+                        <FaAlignRight className="nav-icon" />
+                    </button>
                 </div>
             </div>
         )
