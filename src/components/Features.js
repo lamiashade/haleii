@@ -7,7 +7,7 @@ export default class Features extends Component {
         return (
             <React.Fragment>
                 <div className="features">
-                    <Title title="How it works" />
+                    <Title className="feat-title" title="How it works" />
                     <p>Whether you're buying or selling, our system will provide you with your homes true value.</p>
                 </div>
                 <div className="product-sell-1">
@@ -30,7 +30,7 @@ export default class Features extends Component {
                 </div>
                 <div className="products">
                     <Title title="Packages" />
-                    <Cards/>
+                    <Cards className="prod-cards"/>
                 </div>
             </React.Fragment>
         )

@@ -160,34 +160,25 @@
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .section-title h4 {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
-.section-title div {
-  width: 5rem;
-  height: 2px;
-  margin: 0 auto;
-  background: var(--primaryColor);
-}
+
 /* end of Title */
 
 /* Features */
 .features{
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.features .features-center .row{
-  margin: 0 auto;
-  align-items: center;
-}
 
 .the-team {
-  margin: 0 auto;
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 /* end features */
@@ -215,10 +206,12 @@
 
 .container-fluid .row .col-md-4{
   padding-bottom: 6rem;
+  
 }
 
 .container-fluid .row{
   padding-top: 3rem;
+  margin: auto 0;
 }
 
 /* End Card  */
