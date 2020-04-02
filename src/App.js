@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./pages/Home"
 import Services from './pages/Services'
 import Footer from './components/Footer'
+import Navbar from "./components/Navbar"
 import Error from "./pages/Error"
 
 import { BrowserRouter, Route, Switch } from "react-router-dom"
@@ -12,7 +13,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 function App () {
   return (
-      <React.Fragment>
+    <React.Fragment>
+      <Navbar />
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />

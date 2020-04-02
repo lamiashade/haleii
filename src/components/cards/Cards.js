@@ -11,13 +11,13 @@ export default class Cards extends Component {
             <div className="container-fluid d-flex fustify-content center">
                 <div className="row">
                     <div className="col-md-4">
-                        <Card imgsrc={img} title="discover"/>
+                        <Card imgsrc={img} title="Basic"/>
                     </div>
                     <div className="col-md-4">
-                        <Card imgsrc={img2} title="save"/>
+                        <Card imgsrc={img2} title="Advanced"/>
                     </div>
                     <div className="col-md-4">
-                        <Card imgsrc={img3} title="value"/>
+                        <Card imgsrc={img3} title="Premium"/>
                     </div>
                 </div>
             </div>

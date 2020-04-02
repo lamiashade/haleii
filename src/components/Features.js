@@ -5,25 +5,32 @@ import Cards from './cards/Cards'
 export default class Features extends Component {
     render() {
         return (
-                <React.Fragment>
+            <React.Fragment>
                 <div className="features">
-                    <Title title="Features" />
-                    <hr className="line"/>
-                        <div className="features-center">
-                            <Cards />
-                        </div>
+                    <Title title="How it works" />
+                    <p>Whether you're buying or selling, our system will provide you with your homes true value.</p>
                 </div>
-
-                <hr className="line"/>
-
-                <div className="about">
-                    <Title title="What is Haleii" />
-                        <div className="about-center">
-                            <p className="about-blurb">
-                                Whether you are buying or selling, Haleii will let you know exactly what your home is worth. Our True Value system is a certified appraisal peformed by professionals, not algorithms or realtors.
-                                Get your the home you are selling or buying True value certified and have the peace of mind of know exactly what your home is worth.
-                            </p>
-                        </div>
+                <div className="product-sell-1">
+                    <Title title="Establishes the value of the home"/>
+                    <p>Benifits</p>
+                </div>
+                <div className="product-sell-2">
+                    <Title title="Determines cost of a loan"/>
+                    <p>Benifits</p>
+                </div>
+                <div className="product-sell-3">
+                    <Title title="Save money on loan interest"/>
+                    <p>Benifits</p>
+                </div>
+                <div className="the-team">
+                    <Title title="Meet our Home value experts" />
+                    <p className="about-blurb">            
+                       Our team of certified residential appraiser have evaluated over 1000 properties and saved home owners on average 600 dollars.
+                    </p>
+                </div>
+                <div className="products">
+                    <Title title="Packages" />
+                    <Cards/>
                 </div>
             </React.Fragment>
         )

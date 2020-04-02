@@ -5,8 +5,8 @@ const Card = props => {
         <React.Fragment>  
             <div className="card">
                 <img src={props.imgsrc} alt="" className="overflow" />
+                <div className="card-title">{props.title}</div>
             </div>
-            <h4 className="card-title">{props.title}</h4>
         </React.Fragment>
     );
 }
