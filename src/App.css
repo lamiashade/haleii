@@ -1,4 +1,14 @@
 
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;  
+}
+
 :root {
     --primaryColor: #2196f3;
     --mainWhite: #fff;
@@ -11,6 +21,8 @@
     --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
     --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
+
 
 /* Navigation Bar */ 
 
@@ -44,6 +56,7 @@
 
 .nav-bar .nav-items a:hover{
   color: var(--primaryColor);
+  cursor: pointer;
 }
 
 .nav-bar .nav-btn{
@@ -59,7 +72,7 @@
   width: 4rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
  
   .nav-bar .nav-items a {
     display: none;
@@ -84,7 +97,7 @@
 /* Hero */
 
 .defaultHero {
-  min-height: calc(100vh - 66px);
+  min-height: calc(100vh);
   background: url("./images/hero-img.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -104,8 +117,8 @@
   letter-spacing: var(--mainSpacing);
 }
 .banner h1 {
-  font-size: 2.5rem;
-  font-weight: 400px;
+  font-size: 6.3rem;
+  font-weight: 700;
 }
 
 .hero-call-to-action {
@@ -123,36 +136,29 @@
   color: var(--mainWhite);
   padding: 10px 15px;
   border: none;
-  border-radius: 17px;
+  border-radius: 24px;
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 576px) {
-  
+.hero-call-to-action .hero-btn .banner-icon:hover{
+  color: var(--mainBlack);
+}
+
+.hero-call-to-action .hero-btn:hover{
+  cursor: pointer;
+  background-color: var(--mainWhite);
+}
+
+@media screen and (max-width: 660px) {
   .banner {
     padding: 2rem 3rem;
-    top: 150px;
+    top: 120px;
   }
   .banner h1 {
-    font-size: 2rem;
+    font-size: 3.4rem;
   }
 }
-@media screen and (min-width: 576px) {
-  .banner {
-    padding: 2rem 3rem;
-  }
-  .banner h1 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .banner {
-    padding: 2rem 6rem;
-  }
-  .banner h1 {
-    font-size: 4rem;
-  }
-}
+
 /* End of Banner */
 
 /* Title */
@@ -162,7 +168,8 @@
 }
 
 .section-title h4 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -173,12 +180,232 @@
 /* Features */
 .features{
   text-align: center;
-  margin-top: 30px;
+}
+
+.features .feat-title {
+  margin-top: 60px;
+}
+
+.grid-cont {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* FIRST ROW */
+.grid-cont .info-1 {
+  border-radius: 24px;
+  width:100%;
+  height: 50%;
+  background-color: #F0F5F3;
+}
+
+.grid-cont .info-1 h4{
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding-top: 20px;
+  margin: 0 40px;
+}
+
+.grid-cont .info-1 .info{
+  padding-top: 20px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont{
+  width:100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont img {
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 660px) {
+  .grid-cont .info-1 {
+    height: 100%;
+  }
+
+  .grid-cont .img-cont{
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .grid-cont .img-cont img {
+    display: flex;
+    border-radius: 55px;
+    width:100%;
+    height: 100%;
+  }
+}
+
+/* SECOND ROW */
+.grid-cont .info-2 {
+  border-radius: 24px;
+  width:100%;
+  height: 70%;
+  background-color:#E5EEF5;
+}
+
+.grid-cont .info-2 h4{
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding-top: 20px;
+  margin: 0 40px;
+}
+
+.grid-cont .info-2 .info{
+  padding-top: 20px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont-2{
+  width:100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont-2 img {
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 660px) {
+  .grid-cont .info-2 {
+    height: 100%;
+  }
+
+  .grid-cont .img-cont-2{
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .grid-cont .img-cont-2 img {
+    display: flex;
+    border-radius: 55px;
+    width:100%;
+    height: 100%;
+  }
+}
+
+/* THIRD ROW */
+
+.grid-cont .info-3 {
+  border-radius: 24px;
+  width:100%;
+  height: 50%;
+  background-color:#E7DDDB;
+}
+
+.grid-cont .info-3 h4{
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding-top: 20px;
+  margin: 0 40px;
+}
+
+.grid-cont .info-3 .info{
+  padding-top: 20px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont-3{
+  width:100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-cont-3 img {
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 660px) {
+  .grid-cont .info-3 {
+    height: 100%;
+  }
+
+  .grid-cont .img-cont-3{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .grid-cont .img-cont-3 img {
+    display: flex;
+    border-radius: 55px;
+    width:100%;
+    height: 100%;
+  }
 }
 
 
-.the-team {
-  text-align: center;
+/* TEAM ROW */
+
+.grid-cont .team {
+  border-radius: 24px;
+  width:100%;
+  height: 50%;
+  background-color:#DECED8;
+}
+
+.grid-cont .team h4{
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding-top: 20px;
+  margin: 0 40px;
+}
+
+.grid-cont .team .info{
+  padding-top: 20px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-team{
+  width:100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.grid-cont .img-team img {
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 660px) {
+  .grid-cont .team {
+    height: 100%;
+  }
+
+  .grid-cont .img-team{
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .grid-cont .img-team img {
+    display: flex;
+    border-radius: 55px;
+    width:100%;
+    height: 100%;
+  }
+}
+
+
+/* Product Cards */
+
+.products {
+  align-content: center;
+}
+
+.products .prod-cards{
+  margin: 0 auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 660px) {
+  .products .prod-cards{
+    width: 100%;
+  }
 }
 
 /* end features */
@@ -186,8 +413,9 @@
 /*  Card */
 
 .card{
-  height: 15rem;
-  width: 25rem;
+  display: flex;
+  height: 10rem;
+  width: 20rem;
   justify-content: center;
   overflow: hidden;
   box-shadow: 5px 10px 20px 1px var(--lightShadow);
@@ -205,13 +433,16 @@
 }
 
 .container-fluid .row .col-md-4{
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   
 }
 
-.container-fluid .row{
-  padding-top: 3rem;
-  margin: auto 0;
+@media screen and (max-width: 576px) {
+  .card{
+    height: 5rem;
+    width: 20rem;
+  }
+
 }
 
 /* End Card  */
